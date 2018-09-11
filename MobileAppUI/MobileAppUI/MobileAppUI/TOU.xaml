@@ -2,8 +2,10 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MobileAppUI.TOU" NavigationPage.HasNavigationBar="False"
-             BackgroundImage="background_image_cropped.png">
-    <Grid Padding="10" HorizontalOptions="FillAndExpand">
+             >
+    
+    <Grid Padding="30" HorizontalOptions="FillAndExpand">
+        
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
@@ -13,12 +15,14 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto" />
         </Grid.ColumnDefinitions>
-        <Label Grid.Row="0" Text="TERMS OF USE" FontAttributes="Bold" TextColor="#ffffff" FontSize="18" FontFamily="{StaticResource HeavyFont}" />
-        <Label Grid.Row="1" x:Name="tosText" FontAttributes="Bold" TextColor="#ffffff" FontSize="12" FontFamily="{StaticResource HeavyFont}" />
-        <BoxView Grid.Row="2" HorizontalOptions="FillAndExpand" HeightRequest="1" Color="#e5dace" />
-        <StackLayout Grid.Row="3" Orientation="Horizontal">
-            <Button x:Name="denyButton" Text="Deny" Clicked="denyButton_Clicked" BackgroundColor="#e9a590" TextColor="#ffffff" FontSize="14" FontFamily="{StaticResource NormalFont}" />
-            <Button x:Name="agreeButton" Text="Agree" Clicked="agreeButton_Clicked" BackgroundColor="#e9a590" TextColor="#ffffff" FontSize="14" FontFamily="{StaticResource NormalFont}" />
+        <StackLayout Padding="0,10,0,0">
+            <Label Grid.Row="0" Text="TERMS OF USE" FontAttributes="Bold" TextColor="#ffffff" FontSize="18" FontFamily="{StaticResource HeavyFont}" />
+            <Label Grid.Row="1" x:Name="tosText" FontAttributes="Bold" TextColor="#ffffff" FontSize="12" FontFamily="{StaticResource HeavyFont}" />
+        </StackLayout>
+        <BoxView Grid.Row="2" HorizontalOptions="FillAndExpand" HeightRequest="1" Color="#e5dace"  />
+        <StackLayout Grid.Row="3" Orientation="Horizontal"  VerticalOptions="EndAndExpand" Padding="0,10,0,10"> 
+            <Button x:Name="denyButton" Text="Deny" Clicked="denyButton_Clicked" BackgroundColor="#e9a590" TextColor="#ffffff" FontSize="18" FontFamily="{StaticResource NormalFont}" HorizontalOptions="StartAndExpand" WidthRequest="144" HeightRequest="47" />
+            <Button x:Name="agreeButton" Text="Accept" Clicked="agreeButton_Clicked" BackgroundColor="#e9a590" TextColor="#ffffff" FontSize="18" FontFamily="{StaticResource NormalFont}" HorizontalOptions="EndAndExpand" WidthRequest="144" HeightRequest="47" />
         </StackLayout>
     </Grid>
 </ContentPage>

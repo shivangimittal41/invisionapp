@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:MobileAppUI"
-             x:Class="MobileAppUI.MainPage">
+             x:Class="MobileAppUI.MainPage" NavigationPage.HasNavigationBar="False">
 
     <StackLayout x:Name="mainStackLayout" Orientation="Vertical" VerticalOptions="EndAndExpand" HorizontalOptions="Center" Padding="0,0,0,90">
         <StackLayout.GestureRecognizers>
