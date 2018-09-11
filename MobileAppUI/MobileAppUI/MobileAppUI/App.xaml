@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileAppUI.App">
+	<Application.Resources>
+        <ResourceDictionary>
+            <OnPlatform x:TypeArguments="x:String" x:Key="BoldFont">
+                <On Platform="Android" Value="Avenir-Medium.ttf#Avenir Medium" />
+                <On Platform="UWP" Value="/Assets/Avenir-Medium.ttf#Avenir Medium" />
+                <On Platform="iOS" Value="Avenir-Medium" />
+            </OnPlatform>
+            <OnPlatform x:TypeArguments="x:String" x:Key="NormalFont">
+                <On Platform="Android" Value="Avenir-Medium.ttf#Avenir Medium" />
+                <On Platform="UWP" Value="/Assets/Avenir-Medium.ttf#Avenir Medium" />
+                <On Platform="iOS" Value="Avenir-Medium" />
+            </OnPlatform>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
