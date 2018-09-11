@@ -50,8 +50,6 @@ namespace MobileAppUI
                 return;
 
             var selectedItem = e.SelectedItem as SalonList_Class;
-            //await DisplayAlert(selectedItem.sId.ToString(), selectedItem.sStatus, "ok");
-            //string sAccountNumber, string sAddress, string sPhone, string sEmail
             await Navigation.PushAsync(new SalonDetail(selectedItem.sAccountNumber, selectedItem.sAddress, selectedItem.sPhone, selectedItem.sEmail));
 
             ListOfSalons.SelectedItem = null;
