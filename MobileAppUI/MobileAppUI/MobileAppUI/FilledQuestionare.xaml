@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileAppUI.FilledQuestionare">
+    <ContentPage.Content>
+
+        <StackLayout Orientation="Vertical" BackgroundColor="Black">
+            <Label x:Name="questionareTitle" TextColor="White" HorizontalOptions="CenterAndExpand" FontSize="18" FontFamily="{StaticResource HeavyFont}"/>
+            <Label x:Name="questionareLastUpdated" TextColor="White" HorizontalOptions="CenterAndExpand" FontSize="18" FontFamily="{StaticResource NormalFont}"/>
+
+            <StackLayout Grid.Row="3" Orientation="Horizontal"  VerticalOptions="EndAndExpand" Padding="0,10,0,10" Opacity="1">
+                <Button x:Name="saveButton" Text="Save and Exit" Clicked="saveButton_Clicked" BackgroundColor="#e9a590" TextColor="#ffffff" FontSize="18" FontFamily="{StaticResource NormalFont}" HorizontalOptions="StartAndExpand" WidthRequest="144" HeightRequest="47" />
+                <Button x:Name="submitButton" Text="Submit" Clicked="submitButton_Clicked" BackgroundColor="#e9a590" TextColor="#ffffff" FontSize="18" FontFamily="{StaticResource NormalFont}" HorizontalOptions="EndAndExpand" WidthRequest="144" HeightRequest="47" />
+            </StackLayout>
+
+            <ListView x:Name="ListOfQuestions"
+                      IsPullToRefreshEnabled="True"
+                      ItemSelected="ListOfQuestions_ItemSelected"
+                      HasUnevenRows="True"
+                      BackgroundColor="WhiteSmoke">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame Margin="10,5,10,5">
+                                <StackLayout Orientation="Horizontal" >
+                                    <Label Text="{Binding qId}" FontAttributes="Bold" TextColor="#212121" 
+                                                   FontSize="12" FontFamily="Avenir Heavy"/>
+                                    <Label Text="{Binding qTitle}" TextColor="#757575" FontSize="12"/>
+                                    <Image Source="{Binding qPhoto}" />
+                                </StackLayout>
+                            </Frame>
+
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
