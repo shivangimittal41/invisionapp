@@ -11,7 +11,8 @@ namespace MobileAppUI
 		{
 			InitializeComponent();
 
-			MainPage = new MainPage();
+            MainPage = new MainPage();
+            //MainPage = new NavigationPage(new SalonsList());
 		}
 
 		protected override void OnStart ()

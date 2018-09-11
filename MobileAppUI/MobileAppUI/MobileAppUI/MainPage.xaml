@@ -7,10 +7,10 @@
 
 
     <StackLayout Orientation="Vertical" VerticalOptions="EndAndExpand" HorizontalOptions="Center" Padding="0,0,0,90">
-        <StackLayout Padding="0,0,0,0">
+        <StackLayout Padding="0,0,0,0" Spacing="0">
             <Label Text="KERASTASE" FontFamily="{StaticResource NormalFont}" FontSize="45" TextColor="White"/>
         </StackLayout>
-        <StackLayout Padding="80,0,10,0">
+        <StackLayout Padding="80,0,10,0" Spacing="0">
             <Label Text=" PARIS" FontFamily="{StaticResource NormalFont}" FontSize="25" TextColor="White"/>
         </StackLayout>
         <!--<Label Text="Welcome to Xamarin Forms! (Default)" />-->
