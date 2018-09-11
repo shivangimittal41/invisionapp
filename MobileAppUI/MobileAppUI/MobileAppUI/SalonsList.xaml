@@ -5,11 +5,28 @@
              NavigationPage.HasNavigationBar="True" >
     <ContentPage.Content>
         <StackLayout>
-            <ListView x:Name="ListOfSalons" ItemsSource="{Binding}">
+            <SearchBar Placeholder="Search" PlaceholderColor="Accent" FontFamily="{StaticResource HeavyFont}" TextChanged="SearchBar_TextChanged" />
+            <ListView x:Name="ListOfSalons"
+                      IsPullToRefreshEnabled="True"
+                      HasUnevenRows="True"
+                      Refreshing="ListOfSalons_Refreshing"
+                      ItemSelected="ListOfSalons_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            
+                            <Frame Margin="10,5,10,5">
+                                <StackLayout>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="{Binding sName}" FontAttributes="Bold" />
+                                        <Label Text="," />
+                                        <Label Text="{Binding sState}" />
+                                    </StackLayout>
+                                    <Label Text="{Binding sAccountNumber}" />
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="{Binding sStatus}" />
+                                    </StackLayout>
+                                </StackLayout>
+                            </Frame>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
