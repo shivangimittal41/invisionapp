@@ -30,11 +30,11 @@ namespace MobileAppUI
         {
             _questionareList.Clear(); //Empty the older list.
             _questionareList = new ObservableCollection<QuestionareDetails>{
-                new QuestionareDetails { qId=0, qTitle="This is Questionare 1", qResponse="Yes", qLastUpdated="6/28/18", qPhoto="", qText="This is my comment." },
-                new QuestionareDetails { qId=1, qTitle="This is Questionare 2", qResponse="No", qLastUpdated="6/29/18", qPhoto="", qText="This is my comment 2." },
-                new QuestionareDetails { qId=2, qTitle="This is Questionare 3", qResponse="Yes", qLastUpdated="6/20/18", qPhoto="", qText="This is my comment 3." },
-                new QuestionareDetails { qId=3, qTitle="This is Questionare 4", qResponse="No", qLastUpdated="6/21/18", qPhoto="", qText="This is my comment 4." },
-                new QuestionareDetails { qId=4, qTitle="This is Questionare 5", qResponse="Yes", qLastUpdated="6/10/18", qPhoto="", qText="This is my comment 5." }
+                new QuestionareDetails { qId=0, qTitle="This is Questionare 1", qLastUpdated="6/28/18" },
+                new QuestionareDetails { qId=1, qTitle="This is Questionare 2", qLastUpdated="6/29/18" },
+                new QuestionareDetails { qId=2, qTitle="This is Questionare 3", qLastUpdated="6/20/18" },
+                new QuestionareDetails { qId=3, qTitle="This is Questionare 4", qLastUpdated="6/21/18" },
+                new QuestionareDetails { qId=4, qTitle="This is Questionare 5", qLastUpdated="6/10/18" }
             };
 
             return _questionareList;
@@ -57,7 +57,8 @@ namespace MobileAppUI
                 return;
 
             var selectedItem = e.SelectedItem as QuestionareDetails;
-            await DisplayAlert(selectedItem.qId.ToString(), selectedItem.qText, "ok");
+            //await DisplayAlert(selectedItem.qId.ToString(), selectedItem.qTitle, "ok");
+            await Navigation.PushAsync(new FilledQuestionare(selectedItem.qTitle, selectedItem.qLastUpdated));
 
             ListOfQuestionares.SelectedItem = null;
         }
