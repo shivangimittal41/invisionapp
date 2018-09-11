@@ -137,19 +137,19 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon87.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\Images.imageset\action-needed.png">
+    <ImageAsset Include="Assets.xcassets\Images.imageset\action_needed.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\Images.imageset\action-needed@2x.png">
+    <ImageAsset Include="Assets.xcassets\Images.imageset\action_needed@2x.png">
       <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Assets.xcassets\Images.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\Images1.imageset\Answer-No.png">
+    <ImageAsset Include="Assets.xcassets\Images1.imageset\Answer_No.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\Images1.imageset\Answer-No@2x.png">
+    <ImageAsset Include="Assets.xcassets\Images1.imageset\Answer_No@2x.png">
       <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Assets.xcassets\Images1.imageset\Contents.json">
@@ -236,10 +236,10 @@
     <ImageAsset Include="Assets.xcassets\Images18.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\Images19.imageset\background-image-cropped.png">
+    <ImageAsset Include="Assets.xcassets\Images19.imageset\background_image_cropped.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\Images19.imageset\background-image-cropped@2x.png">
+    <ImageAsset Include="Assets.xcassets\Images19.imageset\background_image_cropped@2x.png">
       <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Assets.xcassets\Images19.imageset\Contents.json">
