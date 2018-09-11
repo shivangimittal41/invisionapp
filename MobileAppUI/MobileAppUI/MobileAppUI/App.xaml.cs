@@ -12,8 +12,7 @@ namespace MobileAppUI
 			InitializeComponent();
 
 
-			//MainPage = new NavigationPage(new MainPage());
-            MainPage = new NavigationPage(new SalonsList());
+			MainPage = new NavigationPage(new MainPage());
             //MainPage = new NavigationPage(new TOU());
             //MainPage = new MainPage();
             //MainPage = new NavigationPage(new SalonsList());
