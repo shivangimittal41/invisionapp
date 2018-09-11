@@ -2,35 +2,49 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MobileAppUI.SalonsList"
-             NavigationPage.HasNavigationBar="True" >
+            BackgroundColor="Black"
+             >
     <ContentPage.Content>
-        <StackLayout>
-            <SearchBar Placeholder="Search" PlaceholderColor="Accent" FontFamily="{StaticResource HeavyFont}" TextChanged="SearchBar_TextChanged" />
+        <StackLayout BackgroundColor="Black">
+            <StackLayout Orientation="Vertical">
+                <Label Text="MY SALONS" TextColor="White"/>
+
+                <SearchBar Placeholder="Search" PlaceholderColor="White" FontFamily="{StaticResource HeavyFont}" TextChanged="SearchBar_TextChanged" FontSize="14"
+                       BackgroundColor="LightGray" Margin="10" WidthRequest="20" />
             <ListView x:Name="ListOfSalons"
                       IsPullToRefreshEnabled="True"
                       HasUnevenRows="True"
                       Refreshing="ListOfSalons_Refreshing"
-                      ItemSelected="ListOfSalons_ItemSelected">
+                      ItemSelected="ListOfSalons_ItemSelected" BackgroundColor="LightSlateGray">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <Frame Margin="10,5,10,5">
-                                <StackLayout>
-                                    <StackLayout Orientation="Horizontal">
-                                        <Label Text="{Binding sName}" FontAttributes="Bold" />
-                                        <Label Text="," />
-                                        <Label Text="{Binding sState}" />
+                                <StackLayout Orientation="Horizontal">
+                                    <StackLayout Orientation="Vertical">
+                                        <StackLayout Orientation="Horizontal" >
+                                            <Label Text="{Binding sName}" FontAttributes="Bold" TextColor="#212121" 
+                                                   FontSize="12" FontFamily="Avenir Heavy"/>
+                                            <Label Text="," />
+                                            <Label Text="{Binding sState}" TextColor="#757575" FontSize="12"/>
+                                        </StackLayout>
+                                        <StackLayout Orientation="Horizontal" >
+                                            <Label Text="Account "/>
+                                            <Label Text="{Binding sAccountNumber}" TextColor="#757575" FontFamily="Avenir Light"/>
+                                        </StackLayout>
                                     </StackLayout>
-                                    <Label Text="{Binding sAccountNumber}" />
-                                    <StackLayout Orientation="Horizontal">
-                                        <Label Text="{Binding sStatus}" />
-                                    </StackLayout>
-                                </StackLayout>
+                                    
+                                        <Label Text="{Binding sStatus}"  HorizontalOptions="EndAndExpand" TextColor="#212121"
+                                               FontSize="20"/>
+                                        </StackLayout>
+          
                             </Frame>
-                        </ViewCell>
+            
+            </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+        </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -15,9 +15,7 @@ namespace MobileAppUI
 		public TOU ()
 		{
 			InitializeComponent ();
-            BackgroundImage = "background_image_cropped.png";
-
-            Opacity = 0.5;
+           
             tosText.Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n" +
                 "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." +
                 "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. \n" +
@@ -46,6 +44,7 @@ namespace MobileAppUI
         private async void agreeButton_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new SalonsList());
+            
         }
     }
 }
