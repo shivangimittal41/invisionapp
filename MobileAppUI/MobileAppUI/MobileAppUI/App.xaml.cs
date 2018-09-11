@@ -17,7 +17,7 @@ namespace MobileAppUI
             //MainPage = new NavigationPage(new TOU());
             //MainPage = new MainPage();
             //MainPage = new NavigationPage(new SalonsList());
-		}
+        }
 
 		protected override void OnStart ()
 		{
