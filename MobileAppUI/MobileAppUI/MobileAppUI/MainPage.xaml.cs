@@ -13,7 +13,9 @@ namespace MobileAppUI
 		public MainPage()
 		{
 			InitializeComponent();
-            BackgroundImage = "Assets\background - image - cropped.png";
+
+            BackgroundImage = "background_image_cropped.png";
+
 
         }
 	}
