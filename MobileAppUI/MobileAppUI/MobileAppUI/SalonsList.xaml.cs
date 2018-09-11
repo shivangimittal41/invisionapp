@@ -25,11 +25,11 @@ namespace MobileAppUI
         {
             _salonList.Clear(); //Empty the older list.
             _salonList = new ObservableCollection<SalonList_Class>{
-                new SalonList_Class { sId=0, sName="6 Salon", sAddress="777 20th Ave S, Ann Arbor, MI 48103", sState="Birmingham", sAccountNumber="123", sEmail="xyz@zbc.com", sPhone="978546879", sStatus="Complete" },
-                new SalonList_Class { sId=1, sName="Elle Studio", sAddress="777 20th Ave S, Ann Arbor, MI 48103", sState="Northville", sAccountNumber="456", sEmail="xyz@zbc.com", sPhone="978546879", sStatus="In Progress" },
-                new SalonList_Class { sId=2, sName="Liquid Salon", sAddress="777 20th Ave S, Ann Arbor, MI 48103", sState="Bloomfield Hills", sAccountNumber="789", sEmail="xyz@zbc.com", sPhone="978546879", sStatus="Not Started" },
-                new SalonList_Class { sId=3, sName="One Society", sAddress="777 20th Ave S, Ann Arbor, MI 48103", sState="Northville", sAccountNumber="101112", sEmail="xyz@zbc.com", sPhone="978546879", sStatus="Rejected" },
-                new SalonList_Class { sId=4, sName="Salon XL Color & Design Group", sAddress="777 20th Ave S, Ann Arbor, MI 48103", sState="", sAccountNumber="131415", sEmail="xyz@zbc.com", sPhone="978546879", sStatus="In Progress" }
+                new SalonList_Class { sId=0, sName="6 Salon", sAddress="777 20th Ave S, Ann Arbor, MI 48103", sState="Birmingham", sAccountNumber="#123", sEmail="xyz@zbc.com", sPhone="978546879", sStatus="Complete" },
+                new SalonList_Class { sId=1, sName="Elle Studio", sAddress="777 20th Ave S, Ann Arbor, MI 48103", sState="Northville", sAccountNumber="#456", sEmail="xyz@zbc.com", sPhone="978546879", sStatus="In Progress" },
+                new SalonList_Class { sId=2, sName="Liquid Salon", sAddress="777 20th Ave S, Ann Arbor, MI 48103", sState="Bloomfield Hills", sAccountNumber="#789", sEmail="xyz@zbc.com", sPhone="978546879", sStatus="Not Started" },
+                new SalonList_Class { sId=3, sName="One Society", sAddress="777 20th Ave S, Ann Arbor, MI 48103", sState="Northville", sAccountNumber="#101112", sEmail="xyz@zbc.com", sPhone="978546879", sStatus="Rejected" },
+                new SalonList_Class { sId=4, sName="Salon XL Color & Design Group", sAddress="777 20th Ave S, Ann Arbor, MI 48103", sState="", sAccountNumber="#131415", sEmail="xyz@zbc.com", sPhone="978546879", sStatus="In Progress" }
             };
 
             if (string.IsNullOrEmpty(userSearch))

@@ -7,10 +7,13 @@
     <ContentPage.Content>
        
             <StackLayout Orientation="Vertical" BackgroundColor="Black">
-                <Label Text="MY SALONS" TextColor="White" HorizontalOptions="CenterAndExpand" FontSize="18" FontFamily=" Avenir Heavy"/>
-
+            <StackLayout Orientation="Horizontal" Padding="0,30,0,5">
+                <Label Text="MY SALONS" TextColor="White" HorizontalOptions="CenterAndExpand" FontSize="18" FontFamily=" Avenir Heavy " />
+                <Image Source="menu_3.jpg" HorizontalOptions="EndAndExpand"/>
+            </StackLayout>
                 <SearchBar Placeholder="Search" PlaceholderColor="White" FontFamily="{StaticResource HeavyFont}" TextChanged="SearchBar_TextChanged" FontSize="14"
                        BackgroundColor="LightGray" Margin="10" WidthRequest="20" />
+           
             <ListView x:Name="ListOfSalons"
                       IsPullToRefreshEnabled="True"
                       HasUnevenRows="True"
