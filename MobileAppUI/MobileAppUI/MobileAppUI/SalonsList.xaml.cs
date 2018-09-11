@@ -50,7 +50,7 @@ namespace MobileAppUI
                 return;
 
             var selectedItem = e.SelectedItem as SalonList_Class;
-            await Navigation.PushAsync(new SalonDetail(selectedItem.sAccountNumber, selectedItem.sAddress, selectedItem.sPhone, selectedItem.sEmail));
+            await Navigation.PushAsync(new SalonDetail(selectedItem.sName, selectedItem.sAccountNumber, selectedItem.sAddress, selectedItem.sPhone, selectedItem.sEmail));
 
             ListOfSalons.SelectedItem = null;
         }

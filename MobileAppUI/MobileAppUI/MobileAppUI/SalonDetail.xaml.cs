@@ -16,9 +16,10 @@ namespace MobileAppUI
 	{
         private ObservableCollection<QuestionareDetails> _questionareList = new ObservableCollection<QuestionareDetails>() { };
         
-        public SalonDetail (string sAccountNumber, string sAddress, string sPhone, string sEmail)
+        public SalonDetail (string TitleOfPage, string sAccountNumber, string sAddress, string sPhone, string sEmail)
 		{
 			InitializeComponent ();
+            this.Title = TitleOfPage;
             sAccountNumberLabel.Text = sAccountNumber;
             sAddressLabel.Text = sAddress;
             sPhoneLabel.Text = sPhone;
@@ -35,6 +36,7 @@ namespace MobileAppUI
                 new QuestionareDetails { qId=2, qTitle="This is Questionare 3", qLastUpdated="6/20/18" },
                 new QuestionareDetails { qId=3, qTitle="This is Questionare 4", qLastUpdated="6/21/18" },
                 new QuestionareDetails { qId=4, qTitle="This is Questionare 5", qLastUpdated="6/10/18" }
+
             };
 
             return _questionareList;
