@@ -4,7 +4,10 @@
              xmlns:local="clr-namespace:MobileAppUI"
              x:Class="MobileAppUI.MainPage">
 
-    <StackLayout Orientation="Vertical" VerticalOptions="EndAndExpand" HorizontalOptions="Center" Padding="0,0,0,90">
+    <StackLayout x:Name="mainStackLayout" Orientation="Vertical" VerticalOptions="EndAndExpand" HorizontalOptions="Center" Padding="0,0,0,90">
+        <StackLayout.GestureRecognizers>
+            <TapGestureRecognizer Tapped="OnScreenTapped"/>
+        </StackLayout.GestureRecognizers>
         <StackLayout Padding="0,0,0,0" Spacing="0">
             <Label Text="KERASTASE" FontFamily="{StaticResource NormalFont}" FontSize="45" TextColor="White"/>
         </StackLayout>

@@ -17,8 +17,8 @@
         <Label Grid.Row="1" x:Name="tosText" FontAttributes="Bold" TextColor="#ffffff" FontSize="12" FontFamily="{StaticResource HeavyFont}" />
         <BoxView Grid.Row="2" HorizontalOptions="FillAndExpand" HeightRequest="1" Color="#e5dace" />
         <StackLayout Grid.Row="3" Orientation="Horizontal">
-            <Button x:Name="denyButton" Text="Deny" BackgroundColor="#e9a590" TextColor="#ffffff" FontSize="14" FontFamily="{StaticResource NormalFont}" />
-            <Button x:Name="agreeButton" Text="Agree" BackgroundColor="#e9a590" TextColor="#ffffff" FontSize="14" FontFamily="{StaticResource NormalFont}" />
+            <Button x:Name="denyButton" Text="Deny" Clicked="denyButton_Clicked" BackgroundColor="#e9a590" TextColor="#ffffff" FontSize="14" FontFamily="{StaticResource NormalFont}" />
+            <Button x:Name="agreeButton" Text="Agree" Clicked="agreeButton_Clicked" BackgroundColor="#e9a590" TextColor="#ffffff" FontSize="14" FontFamily="{StaticResource NormalFont}" />
         </StackLayout>
     </Grid>
 </ContentPage>

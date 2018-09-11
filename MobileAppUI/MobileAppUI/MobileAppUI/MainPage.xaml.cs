@@ -15,8 +15,12 @@ namespace MobileAppUI
 			InitializeComponent();
 
             BackgroundImage = "background_image_cropped.png";
-
-
+            
         }
-	}
+
+        private async void OnScreenTapped(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new TOU());
+        }
+    }
 }
