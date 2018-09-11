@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
+
 namespace MobileAppUI
 {
 	public partial class MainPage : ContentPage
@@ -12,6 +13,8 @@ namespace MobileAppUI
 		public MainPage()
 		{
 			InitializeComponent();
-		}
+            BackgroundImage = "Assets\background - image - cropped.png";
+
+        }
 	}
 }

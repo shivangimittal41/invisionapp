@@ -4,16 +4,15 @@
              xmlns:local="clr-namespace:MobileAppUI"
              x:Class="MobileAppUI.MainPage">
 
-    <!--<StackLayout>
-        --><!-- Place new controls here --><!--
-    	<Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>-->
-    <StackLayout>
-        <Label Text="Welcome to Xamarin Forms! (Avenir Medium)" FontFamily="{StaticResource BoldFont}" />
-        <Label Text="Welcome to Xamarin Forms! (Avenir Medium)" FontFamily="{StaticResource NormalFont}" />
-        <Label Text="Welcome to Xamarin Forms! (Default)" />
+
+    <StackLayout Orientation="Vertical" VerticalOptions="EndAndExpand" HorizontalOptions="Center" Padding="0,0,0,90">
+        <StackLayout Padding="0,0,0,0">
+            <Label Text="KERASTASE" FontFamily="{StaticResource NormalFont}" FontSize="45"/>
+        </StackLayout>
+        <StackLayout Padding="80,0,10,0">
+            <Label Text=" PARIS" FontFamily="{StaticResource NormalFont}" FontSize="25" />
+        </StackLayout>
+        <!--<Label Text="Welcome to Xamarin Forms! (Default)" />-->
     </StackLayout>
 
 </ContentPage>
