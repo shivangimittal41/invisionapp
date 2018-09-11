@@ -9,6 +9,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="SalonDetail.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="SalonsList.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

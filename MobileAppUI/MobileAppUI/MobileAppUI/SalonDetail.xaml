@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileAppUI.SalonDetail">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+
+        <StackLayout Grid.Row="0" >
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Account #: " />
+                <Label x:Name="sAccountNumberLabel" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Address : " />
+                <Label x:Name="sAddressLabel" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Phone : " />
+                <Label x:Name="sPhoneLabel" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Email : " />
+                <Label x:Name="sEmailLabel" />
+            </StackLayout>
+        </StackLayout>
+
+        <StackLayout Grid.Row="1">
+            <Button x:Name="newQuestionareButton" Text="START/CONTINUE/VIEW QUESTIONNAIRE" TextColor="#ffffff" Clicked="newQuestionareButton_Clicked" BackgroundColor="#000000" FontFamily="{StaticResource NormalFont}" />
+            <Label Text="Last updated 8/24/18 at 8:37AM by Jessica Smith" />
+        </StackLayout>
+
+        <Label Grid.Row="2" Text="PAST QUESTIONNAIRES" />
+
+        <ListView Grid.Row="3"
+                  x:Name="ListOfQuestionares"
+                  IsPullToRefreshEnabled="True"
+                  HasUnevenRows="True"
+                  Refreshing="ListOfQuestionares_Refreshing"
+                  ItemSelected="ListOfQuestionares_ItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Frame Margin="10,5,10,5">
+                            <StackLayout>
+                                <Label Text="{Binding qTitle}" FontAttributes="Bold" />
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Last Updated " />
+                                    <Label Text="{Binding qLastUpdated}" />
+                                </StackLayout>
+                            </StackLayout>
+                        </Frame>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+    </Grid>
+</ContentPage>
