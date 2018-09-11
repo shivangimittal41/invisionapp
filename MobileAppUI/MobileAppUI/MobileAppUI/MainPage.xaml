@@ -14,6 +14,7 @@
         <Label Text="Welcome to Xamarin Forms! (Avenir Medium)" FontFamily="{StaticResource BoldFont}" />
         <Label Text="Welcome to Xamarin Forms! (Avenir Medium)" FontFamily="{StaticResource NormalFont}" />
         <Label Text="Welcome to Xamarin Forms! (Default)" />
+        <Image Source="action_needed.png" />
     </StackLayout>
 
 </ContentPage>
