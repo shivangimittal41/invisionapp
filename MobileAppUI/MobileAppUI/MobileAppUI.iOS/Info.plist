@@ -23,6 +23,7 @@
 	<key>UIAppFonts</key>
 	<array>
 	    <string>Avenir-Medium.ttf</string>
+	    <string>AEH.ttf</string>
 	</array>
 	<key>MinimumOSVersion</key>
 	<string>8.0</string>

@@ -4,10 +4,10 @@
              x:Class="MobileAppUI.App">
 	<Application.Resources>
         <ResourceDictionary>
-            <OnPlatform x:TypeArguments="x:String" x:Key="BoldFont">
-                <On Platform="Android" Value="Avenir-Medium.ttf#Avenir Medium" />
-                <On Platform="UWP" Value="/Assets/Avenir-Medium.ttf#Avenir Medium" />
-                <On Platform="iOS" Value="Avenir-Medium" />
+            <OnPlatform x:TypeArguments="x:String" x:Key="HeavyFont">
+                <On Platform="Android" Value="AEH.ttf#Avenir Heavy" />
+                <On Platform="UWP" Value="/Assets/AEH.ttf#Avenir Heavy" />
+                <On Platform="iOS" Value="AEH" />
             </OnPlatform>
             <OnPlatform x:TypeArguments="x:String" x:Key="NormalFont">
                 <On Platform="Android" Value="Avenir-Medium.ttf#Avenir Medium" />
